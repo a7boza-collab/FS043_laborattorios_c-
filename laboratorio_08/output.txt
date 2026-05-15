@@ -1,0 +1,14 @@
+Ejemplo de ejecución del programa:
+
+Ingrese el numero de subintervalos: 1000
+
+=====================================
+Integral de 4/(1+x^2) en [0,1]
+=====================================
+Trapecio compuesto: 3.141592
+Simpson compuesto:  3.141593
+Valor exacto:       3.141593
+
+Errores absolutos:
+Error trapecio:     0.000000
+Error Simpson:      0.000000

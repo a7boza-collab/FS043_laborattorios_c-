@@ -1,0 +1,5 @@
+Ejecucion de jacobi
+
+interaciones 355
+error final 9.6385e-11
+error maximo vs solucion exacta 0.00083746

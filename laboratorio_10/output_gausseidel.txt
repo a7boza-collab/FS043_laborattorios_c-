@@ -1,0 +1,5 @@
+ejecucion gauss-seidel
+
+iteraciones 178
+error final 9.4827e-11
+error maximo vs solucion exacta 0.00083745

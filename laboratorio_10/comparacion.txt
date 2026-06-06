@@ -1,0 +1,15 @@
+comparacion de resultados
+
+iteraciones 
+jacobi 355
+gauus 178
+gauss convergue mas rapido, casi la mitad
+
+error de convergencia
+jacobi 9.6385e-11
+gauss_seidel 9.4827e-11
+los dos tienen errroresmuy pequeños, no llegan a 1e-10
+
+conclusion 
+los dos dan resultados muy buenos, pero es mejor gauss_seidel
+porque usa valores nuevos en el mismo calculo

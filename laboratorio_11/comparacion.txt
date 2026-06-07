@@ -1,0 +1,12 @@
+comparacion entre jacobi y gaussseidel
+iteraciones jacobi 4664
+iteraciones gaussseidel 2509
+error final jacobi 9.998846826897445e-09
+error final gaussseidel 9.961051108953178e-09
+error maximo vs exacta jacobi 1.1612814115033454e-05
+error maximo vs exacta gaussseidel 1.415343140435954e-05
+
+comentario
+el metodo de gaussseidel necesito menos iteraciones para llegar a la tolerancia, converge mas rapido que jacobi
+los dos metodos dan resultados muy parecidos a la exacta, kas graficas se ven iguales 
+creo q es porque gaussseidel usa los valores nuevos que va calculando, por eso avanza mas rapido

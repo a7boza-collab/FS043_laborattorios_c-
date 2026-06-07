@@ -1,0 +1,2 @@
+Separación inicial: 1.000000e-08
+Separación final:   2.061030e+01

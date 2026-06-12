@@ -28,7 +28,7 @@ puntos = np.random.uniform(0, 1, size=(N_mc, d))
 senos = np.sin(np.pi * puntos)
 productos = np.prod(senos, axis=1)
 
-# La integral es el promedio de esos productos (ley de grandes números)
+# La integral es el promedio de esos productos
 integral_mc = np.mean(productos)
 
 t1_mc = time.time()
@@ -39,13 +39,13 @@ print(
 	f"(Error: {error_mc:.8f}, Tiempo: {t1_mc - t0_mc:.4f}s)")
 
 ### ---------------------------------------------------------
-### MÉTODO DE SIMPSON (Basado en el código del profe)
+### MÉTODO DE SIMPSON
 ### ---------------------------------------------------------
 N_simpson = 10 
 N_total_simpson=N_simpson**d
 t0_simpson = time.time()
 
-# Se crea la cuadrícula de puntos
+# Se crea la malla de puntos
 x_1d = np.linspace(0, 1, N_simpson)
 malla = np.meshgrid(*[x_1d] * d, indexing="ij")
 

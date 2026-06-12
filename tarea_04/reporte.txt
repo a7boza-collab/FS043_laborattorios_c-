@@ -1,1 +1,74 @@
+1. Descripcion de los experimentos
+Se calcula la integral desde su valor analitico
+Se usan dos metodos
+Regla de simpson 
+Metodo de Monte Carlo
+Se probo en dimensiones por ejemplo d=2,3,4,5,10,20,32,64 y un millon de puntos en monte carlo
+
+2. Dimenensionalidad maxima alcanzada y observaciones del tiempo de ejecucion
+Simpson
+Sirvio correctamente hasta d=4, en d=6 no supera un segundo, lo que se noto fue que en d=8 la computadora intenta correrlo pero despues de un tiempo la terminal se cierra de repente y no imprime nada en pantalla solo se cierra ya no corre, en d>=10 da el error de que la dimensiones son muy largas porque no puede reservar tanta memoria para generar ka malla, despues de con d>32 da otro error ya que numpy tiene un limite de 32 dimensiones.
+Monte Carlo
+Funciono sin problemas hasta d=20 t=2.89s ya en d=25 t=6.68s, en d=32 t=11,10s y en d=64 t=32,00s vemos que aunque se aumente la dimensionalidad monte carlo sigue funcionando aunque el tiempo podria ser el problema pero a grandes numeros monte carlo es la mejor opcion.
+
+3. Presicion de los resultados
+Hasta d>6 simpson es practicamente igual en presicion a monte carlo, pero simpson tiene un t menor, sin embargo ya para dimensiones superiores no hay comparacion ya que simpson explota y monte carlo cada vez es mas preciso.
+
+4.Discucion sobre la maldision de la dimensionalidad
+Es el principal problema que observamos al comparar los 2 metodos.
+Cuanse se empieza a aumentar las dimensiones, la memoria y el tiempo de respuesta crece de forma explosiva, no solo un poco.
+Simpson crea una malla con todos los puntos posibles,con cada dimension nueva los puntos se multiplican. Solo sirve para pocas dimensiones.
+Monte carlo No necesita arma mallas. usa siempre la misma cantidad de puntos y funciona bien en dimensiones altas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- Probando con d = 3 ---
+Analitico:0.25801228
+Monte Carlo: 0.25785517 (Error: 0.00015710, Tiempo: 0.6885s)
+Simpson:     0.25783767 (Error: 0.00017461, Tiempo: 0.0054s)
+
+--- Probando con d = 6 ---
+Analitico:0.06657033
+Monte Carlo: 0.06654383 (Error: 0.00002650, Tiempo: 1.0315s)
+Simpson:     0.06648026 (Error: 0.00009007, Tiempo: 0.8722s)
+
+--- Probando con d = 18 ---
+Analitico:0.00029501
+Monte Carlo: 0.00029464 (Error: 0.00000038, Tiempo: 2.6989s)
+impson no funciona: "ValueError: broadcast dimensions too large."
+
+--- Probando con d = 20 ---
+Analitico:0.00011956
+Monte Carlo: 0.00011912 (Error: 0.00000044, Tiempo: 2.8971s)
+Simpson no funciona: "ValueError: broadcast dimensions too large."
+
+--- Probando con d = 25 ---
+Analitico:0.00001250
+Monte Carlo: 0.00001251 (Error: 0.00000001, Tiempo: 6.6836s)
+Simpson no funciona: "ValueError: broadcast dimensions too large."
+
+--- Probando con d = 32 ---
+Analitico:0.00000053
+Monte Carlo: 0.00000054 (Error: 0.00000001, Tiempo: 11.1021s)
+Simpson no funciona: "ValueError: broadcast dimensions too large."
+
+--- Probando con d = 64 ---
+Analitico:0.00000000
+Monte Carlo: 0.00000000 (Error: 0.00000000, Tiempo: 32.0800s)
+Simpson no funciona: error numpy trabaja hasta 32 mallas
+
+
+
 

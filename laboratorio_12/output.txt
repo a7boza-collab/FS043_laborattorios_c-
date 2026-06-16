@@ -1,0 +1,6 @@
+=== Simulación de calor 2D ===
+Paso de tiempo dt = 0.000080
+Número total de pasos = 1250
+Ejecución finalizada correctamente
+Archivo generado: calor_2d.gif
+

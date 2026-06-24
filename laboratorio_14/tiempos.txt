@@ -1,0 +1,13 @@
+N=1280 
+Ejecutando con 1 hilos 26,5459 segundos
+Ejecutando con 2 hilos 13,6326 segundos
+Ejecutando con 4 hilos 12,3768 segundos
+Ejecutando con 8 hilos 15,1624 segundos
+
+N=512
+Ejecutando con 1 hilos 448,985 segundos
+Ejecutando con 2 hilos 254,411 segundos
+Ejecutando con 4 hilos 253,488 segundos
+Ejecutando con 8 hilos 256,059 segundos
+
+Se hicieron dos experimentos con N=1280 y N=512, en las dos graficas que se construyeron con las tablas anteriores de tiempos e hilos, se puede ver como a mayor cantidad de hilos el tiemo se reduce, pero por un problema de hardware al llegar a 4 hilos aunque baja el tiempo es muy poco lo que baja osea mi computadora podria trabajar bien con 4, pero los hilos ayudan a ahorrar el tiempo al repartir el trabajo, pero coordinar el trabajo de cada hilo tambien consume tiempo vemos que en 8 hilos, el gasto de organizarlos es mayor que el que ahorro, en cuatro fue donde el ahorro y la coordinacion mejor se equilibro.

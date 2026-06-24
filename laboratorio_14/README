@@ -3,7 +3,7 @@ En la terminal escribir
 g++ matrix_multiplication.cpp -o matrix_multiplication -forenmp
 
 Como ejecutarlo
-./mattttrix_multiplication
+./matrix_multiplication
 
 Para cambiar el numero de hilos
 gedit matrix_multiplication.cpp
